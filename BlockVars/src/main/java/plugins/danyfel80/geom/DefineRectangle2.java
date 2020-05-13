@@ -32,8 +32,8 @@ public class DefineRectangle2 extends Plugin implements Block {
 
 		inputMap.add(varX.getName(), varX);
 		inputMap.add(varY.getName(), varY);
-		inputMap.add(varW.getName(), varH);
-		inputMap.add(varH.getName(), varW);
+		inputMap.add(varW.getName(), varW);
+		inputMap.add(varH.getName(), varH);
 	}
 
 	@Override
