@@ -8,6 +8,23 @@
     <artifactId>icy-blockvars</artifactId>
     <version>0.1.1</version>
 
+    <packaging>jar</packaging>
+
+    <name>BlockVars</name>
+    <description>
+        This plugin library offers vars useful when working with Protocols. Examples are:
+        – VarDimension: allows to specify an integer dimension.
+
+        – VarPoint: allows to specify an integer point.
+        – VarRectangle: allows to specify a rectangle with integer coordinates and dimensions.
+
+        Also, different blocks have been made available to use this variables:
+        – Define Point
+        – Define Dimension
+        – Define Rectangle (by point and dimension)
+        – Define Rectangle 2 (by 4 integer properties)
+    </description>
+
     <properties>
         <outputJar>${project.build.outputDirectory}/../plugin</outputJar>
     </properties>
