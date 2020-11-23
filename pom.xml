@@ -10,7 +10,7 @@
         <version>1.0.4</version>
     </parent>
 
-    <artifactId>icy-blockvars</artifactId>
+    <artifactId>blockvars</artifactId>
     <version>0.1.2</version>
 
     <packaging>jar</packaging>
