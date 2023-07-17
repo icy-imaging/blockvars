@@ -7,3 +7,4 @@ bin/
 *.eml
 *.classpath
 *.project
+**/.DS_Store
