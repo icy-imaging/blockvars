@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2023. Institut Pasteur.
+ * Copyright (c) 2010-2024. Institut Pasteur.
  *
  * This file is part of Icy.
  * Icy is free software: you can redistribute it and/or modify
@@ -18,7 +18,10 @@
 
 package plugins.danyfel80.geom;
 
-import icy.plugin.abstract_.Plugin;
+import org.bioimageanalysis.icy.extension.plugin.abstract_.Plugin;
+import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginIcon;
+import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginName;
+import org.jetbrains.annotations.NotNull;
 import plugins.adufour.blocks.lang.Block;
 import plugins.adufour.blocks.util.VarList;
 import vars.geom.VarDimension;
@@ -33,15 +36,16 @@ import java.util.Optional;
  *
  * @author Daniel Felipe Gonzalez Obando
  */
+@IcyPluginName("Define Rectangle w/ Dimension")
+@IcyPluginIcon(path = "/blockvars.png")
 public class DefineRectangle1 extends Plugin implements Block {
-
     VarPoint varPosition;
     VarDimension varDimension;
 
     VarRectangle varRectangle;
 
     @Override
-    public void declareInput(final VarList inputMap) {
+    public void declareInput(final @NotNull VarList inputMap) {
         varPosition = new VarPoint("Position");
         varDimension = new VarDimension("Dimension");
         inputMap.add(varPosition.getName(), varPosition);
@@ -49,7 +53,7 @@ public class DefineRectangle1 extends Plugin implements Block {
     }
 
     @Override
-    public void declareOutput(final VarList outputMap) {
+    public void declareOutput(final @NotNull VarList outputMap) {
         varRectangle = new VarRectangle("Rectangle");
         outputMap.add(varRectangle.getName(), varRectangle);
     }
@@ -60,5 +64,4 @@ public class DefineRectangle1 extends Plugin implements Block {
         final Dimension dimension = varDimension.getValue(true);
         varRectangle.setValue(new Rectangle(position, dimension));
     }
-
 }

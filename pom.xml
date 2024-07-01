@@ -7,11 +7,11 @@
     <parent>
 		<artifactId>pom-icy</artifactId>
         <groupId>org.bioimageanalysis.icy</groupId>
-        <version>2.2.0</version>
+        <version>3.0.0-a.1</version>
 	</parent>
 
     <artifactId>blockvars</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-a.1</version>
 
     <name>BlockVars</name>
     <description>
@@ -31,6 +31,10 @@
     <dependencies>
         <dependency>
             <groupId>org.bioimageanalysis.icy</groupId>
+            <artifactId>ezplug</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.bioimageanalysis.icy</groupId>
             <artifactId>protocols</artifactId>
         </dependency>
     </dependencies>
@@ -38,8 +42,7 @@
     <repositories>
         <repository>
             <id>icy</id>
-            <name>Icy's Nexus</name>
-            <url>https://icy-nexus.pasteur.fr/repository/Icy/</url>
+            <url>https://nexus-icy.pasteur.cloud/repository/icy/</url>
         </repository>
     </repositories>
 </project>
