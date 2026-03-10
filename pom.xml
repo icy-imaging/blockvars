@@ -7,26 +7,91 @@
     <parent>
 		<artifactId>pom-icy</artifactId>
         <groupId>org.bioimageanalysis.icy</groupId>
-        <version>3.0.0-a.4</version>
+        <version>3.0.0-a.5</version>
 	</parent>
 
     <artifactId>blockvars</artifactId>
-    <version>1.0.0-a.2</version>
+    <version>1.0.0-a.5</version>
 
     <name>BlockVars</name>
     <description>
-        This plugin library offers vars useful when working with Protocols. Examples are:
-        – VarDimension: allows to specify an integer dimension.
+        This extension offers vars useful when working with Protocols. Examples are:
+        — VarDimension: allows specifying an integer dimension.
+        — VarPoint: allows specifying an integer point.
+        — VarRectangle: allows specifying a rectangle with integer coordinates and dimensions.
 
-        – VarPoint: allows to specify an integer point.
-        – VarRectangle: allows to specify a rectangle with integer coordinates and dimensions.
-
-        Also, different blocks have been made available to use this variables:
-        – Define Point
-        – Define Dimension
-        – Define Rectangle (by point and dimension)
-        – Define Rectangle 2 (by 4 integer properties)
+        Also, different blocks have been made available to use these variables:
+        — Define Point
+        — Define Dimension
+        — Define Rectangle (by point and dimension)
+        — Define Rectangle 2 (by 4-integer properties)
     </description>
+    <url>https://icy.bioimageanalysis.org/</url>
+    <inceptionYear>2019</inceptionYear>
+
+    <scm>
+        <url>https://gitlab.pasteur.fr/bia/icy/extensions/blockvars</url>
+        <tag>v${project.version}</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitLab Issues</system>
+        <url>https://gitlab.pasteur.fr/bia/icy/extensions/blockvars/-/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>GitLab CI</system>
+        <url>https://gitlab.pasteur.fr/bia/icy/extensions/blockvars/-/pipelines</url>
+    </ciManagement>
+
+    <organization>
+        <name>Institut Pasteur</name>
+        <url>https://www.pasteur.fr/</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU LGPLv3</name>
+            <url>https://www.gnu.org/licenses/lgpl-3.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>tmusset</id>
+            <name>Thomas Musset</name>
+            <organization>Institut Pasteur</organization>
+            <organizationUrl>https://pasteur.fr</organizationUrl>
+            <url>https://icy.bioimageanalysis.org/author/tmusset/</url>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Daniel Felipe González Obando</name>
+            <roles>
+                <role>founder</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Stéphane Dallongeville</name>
+        </contributor>
+        <contributor>
+            <name>Amandine Tournay</name>
+        </contributor>
+    </contributors>
+
+    <mailingLists>
+        <mailingList>
+            <name>Icy</name>
+            <post>icy.team@pasteur.fr</post>
+        </mailingList>
+    </mailingLists>
+
+    <properties>
+        <license.licenseName>GNU LGPLv3</license.licenseName>
+        <license.copyrightOwners>Institut Pasteur</license.copyrightOwners>
+    </properties>
 
     <dependencies>
         <dependency>

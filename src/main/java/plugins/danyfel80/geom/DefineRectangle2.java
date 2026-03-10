@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2024. Institut Pasteur.
+ * Copyright (c) 2010-2026. Institut Pasteur.
  *
  * This file is part of Icy.
  * Icy is free software: you can redistribute it and/or modify
@@ -19,7 +19,6 @@
 package plugins.danyfel80.geom;
 
 import org.bioimageanalysis.icy.extension.plugin.abstract_.Plugin;
-import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginIcon;
 import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginName;
 import org.jetbrains.annotations.NotNull;
 import plugins.adufour.blocks.lang.Block;
@@ -36,7 +35,6 @@ import java.awt.*;
  * @author Daniel Felipe Gonzalez Obando
  */
 @IcyPluginName("Define Rectangle w/ Position")
-@IcyPluginIcon(path = "/blockvars.png")
 public class DefineRectangle2 extends Plugin implements Block {
     VarInteger varX;
     VarInteger varY;

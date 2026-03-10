@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010-2024. Institut Pasteur.
+ * Copyright (c) 2010-2026. Institut Pasteur.
  *
  * This file is part of Icy.
  * Icy is free software: you can redistribute it and/or modify
@@ -19,7 +19,6 @@
 package plugins.danyfel80.geom;
 
 import org.bioimageanalysis.icy.extension.plugin.abstract_.Plugin;
-import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginIcon;
 import org.bioimageanalysis.icy.extension.plugin.annotation_.IcyPluginName;
 import org.jetbrains.annotations.NotNull;
 import plugins.adufour.blocks.lang.Block;
@@ -35,7 +34,6 @@ import java.awt.*;
  * @author Daniel Felipe Gonzalez Obando
  */
 @IcyPluginName("Define Dimension")
-@IcyPluginIcon(path = "/blockvars.png")
 public class DefineDimension extends Plugin implements Block {
     VarInteger varW;
     VarInteger varH;
@@ -44,7 +42,7 @@ public class DefineDimension extends Plugin implements Block {
 
     @Override
     public void declareInput(final @NotNull VarList inputMap) {
-        varW = new VarInteger("Widht", 0);
+        varW = new VarInteger("Width", 0);
         varH = new VarInteger("Height", 0);
 
         inputMap.add(varW.getName(), varW);
