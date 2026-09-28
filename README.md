@@ -1,4 +1,4 @@
-![Version 1.0.0 alpha 7](https://img.shields.io/badge/v1.0.0-alpha_7-royalblue)
+![Version 1.0.0 alpha 8](https://img.shields.io/badge/v1.0.0-alpha_8-royalblue)
 ![Java 17+](https://img.shields.io/badge/OpenJDK-17+-5382A1?labelColor=E76F00)
 [![License: LGPL v3](https://img.shields.io/badge/LGPLv3-008033?logo=GPLv3&logoSize=auto)](https://www.gnu.org/licenses/lgpl-3.0)
 [![Twitter](https://img.shields.io/twitter/follow/Icy_BioImaging)](https://x.com/Icy_BioImaging)
@@ -21,8 +21,6 @@ Also, different blocks have been made available to use these variables:
 - Define Dimension
 - Define Rectangle (by point and dimension)
 - Define Rectangle 2 (by 4-integer properties)
-
-More detailed user documentation can be found on the BlockVars documentation page on the Icy website: https://icy.bioimageanalysis.org/plugins/blockvars/
 
 ## Installation instructions
 
@@ -47,9 +45,9 @@ More detailed user documentation can be found on the BlockVars documentation pag
 Add this dependency block in your `pom.xml`
 ```xml
 <dependency>
-    <groupId>fr.icy.extensions</groupId>
+    <groupId>fr.icy.extension</groupId>
     <artifactId>blockvars</artifactId>
-    <version>${fr.icy.extensions.blockvars.version}</version>
+    <version>${fr.icy.extension.blockvars.version}</version>
 </dependency>
 ```
 
